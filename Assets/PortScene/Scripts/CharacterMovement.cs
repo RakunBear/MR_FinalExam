@@ -18,6 +18,7 @@ public class CharacterMovement : MonoBehaviour
 
     private bool moveEnabled = true;
 
+    public float gravity = -9.81f;  // 중력 상수
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +49,13 @@ public class CharacterMovement : MonoBehaviour
         var dir = horizontal + vertical;
 
         Vector3 moveVec = dir * speed * Time.deltaTime;
-        
+
+        // 중력 적용
+        if (!characterController.isGrounded)
+        {
+            moveVec.y += gravity * Time.deltaTime;
+        }
+
         characterController.Move(moveVec);
     }
 
