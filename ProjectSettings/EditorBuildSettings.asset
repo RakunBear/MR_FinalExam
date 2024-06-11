@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/PortScene/Port.unity
+    guid: 009a01624fd8e2547b83ff49a670ffff
+  - enabled: 1
+    path: Assets/ContinentScene/Continent.unity
+    guid: 5493a001f4a593344a3ac3ae088fc07c
   m_configObjects: {}
