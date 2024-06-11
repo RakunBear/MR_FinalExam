@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: fa276dc79fdb2054d99b679acd233c80,
+  m_Motion: {fileID: -203655887218126122, guid: a0ac052f3974c1b469f3c749a8f4a5ce,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -74,7 +74,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 8b4090815b6ae58448ad53d8e4c6e7a5,
+  m_Motion: {fileID: -203655887218126122, guid: 5a0cb78721693bc498b4250959ce7ac4,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -90,8 +90,8 @@ AnimatorController:
   m_Name: Sick-Standing
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Sick
-    m_Type: 9
+  - m_Name: sickstanding
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -118,7 +118,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: sick-standing
+    m_ConditionEvent: sickstanding
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5717915822860097483}
@@ -143,7 +143,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: sick-standing
+    m_ConditionEvent: sickstanding
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1752874325197242585}

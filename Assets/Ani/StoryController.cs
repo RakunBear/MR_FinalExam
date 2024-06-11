@@ -19,28 +19,24 @@ public class StoryController : MonoBehaviour
         yield return fadeController.FadeOut();
 
         // 场景1：船员得了坏血病
-        sailor.GetComponent<Animator>().SetTrigger("sick");
-        yield return new WaitForSeconds(2f);
+        sailor.GetComponent<Animator>().SetTrigger("Sick-Standing");
+        yield return new WaitForSeconds(3f);
 
         // 转场：淡入黑色
-        yield return fadeController.FadeIn(1f);
-        yield return new WaitForSeconds(1f);
-        yield return fadeController.FadeOut(1f);
-
-        // 转场：淡入黑色
-        yield return fadeController.FadeIn(1f);
-        yield return new WaitForSeconds(1f);
-        yield return fadeController.FadeOut(1f);
+        yield return fadeController.FadeIn(0.5f);
+        yield return new WaitForSeconds(0.5f);
+        yield return fadeController.FadeOut(0.5f);
 
         // 场景3：厨师给船员吃橘子
         oranges.SetActive(true);
-        chef.GetComponent<Animator>().SetTrigger("GiveOranges");
-        yield return new WaitForSeconds(2f);
+        chef.GetComponent<Animator>().SetTrigger("GiveOrange");
+        Debug.Log("GiveOrange");
+        yield return new WaitForSeconds(3f);
 
         // 转场：淡入黑色
-        yield return fadeController.FadeIn(1f);
-        yield return new WaitForSeconds(1f);
-        yield return fadeController.FadeOut(1f);
+        yield return fadeController.FadeIn(0.5f);
+        yield return new WaitForSeconds(0.5f);
+        yield return fadeController.FadeOut(0.5f);
 
         // 场景4：船员病好了
         sailor.GetComponent<Animator>().SetTrigger("Standing");
