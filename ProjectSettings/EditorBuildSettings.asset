@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/ty/1.unity
+    guid: 624dbb620528d7b4c90d5c11f8213057
+  - enabled: 1
+    path: Assets/ty/Switcher.unity
+    guid: 2c5285a5ed74d604dbe309c2cb7762e1
   m_configObjects: {}
