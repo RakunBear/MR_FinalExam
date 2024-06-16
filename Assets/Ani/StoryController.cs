@@ -10,7 +10,7 @@ public class StoryController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(StorySequence());
+        // StartCoroutine(StorySequence());
     }
 
     private IEnumerator StorySequence()
@@ -41,5 +41,30 @@ public class StoryController : MonoBehaviour
         // 场景4：船员病好了
         sailor.GetComponent<Animator>().SetTrigger("Standing");
         yield return new WaitForSeconds(2f);
+    }
+
+    public void Sick_Standing()
+    {
+        sailor.GetComponent<Animator>().SetTrigger("Sick-Standing");
+    }
+
+    public void GiveOrange()
+    {
+        oranges.SetActive(true);
+        chef.GetComponent<Animator>().SetTrigger("GiveOrange");
+        Invoke("OrangeFalse", 1.0f);
+    }
+
+    public void OrangeFalse()
+    {
+        oranges.SetActive(false);
+    }
+
+    public void Standing()
+    {
+        Vector3 rot = sailor.transform.eulerAngles;
+        rot.x = 0;
+        sailor.transform.eulerAngles = rot; 
+        sailor.GetComponent<Animator>().SetTrigger("Standing");
     }
 }

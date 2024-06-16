@@ -4245,6 +4245,8 @@ PlayableDirector:
     value: {fileID: 415975181}
   - key: {fileID: -6391897178129768235, guid: 1dd35831725cfce40a14c8314bf5ea20, type: 2}
     value: {fileID: 117646179}
+  - key: {fileID: -3192506767772387997, guid: 1dd35831725cfce40a14c8314bf5ea20, type: 2}
+    value: {fileID: 1068246523}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &491691433
@@ -5472,7 +5474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaypointList:
   - {fileID: 2042490127}
-  WalkDeltaTime: 0.02
+  WalkDeltaTime: 0.01
   AvaibleDistance: 1
   IsInfinity: 1
   ComeBack: 1
@@ -6782,7 +6784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaypointList:
   - {fileID: 2042490127}
-  WalkDeltaTime: 0.02
+  WalkDeltaTime: 0.015
   AvaibleDistance: 1
   IsInfinity: 1
   ComeBack: 1
@@ -8017,7 +8019,8 @@ MonoBehaviour:
     \uB2E4\uC74C \uC2DC\uAC04\uC5D0..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c5e76a5fc99436b4b8fcd7d20cde99b3, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4123555427067544999, guid: c5e76a5fc99436b4b8fcd7d20cde99b3,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8080,7 +8083,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &888176589
@@ -8862,6 +8865,7 @@ GameObject:
   - component: {fileID: 1068246522}
   - component: {fileID: 1068246521}
   - component: {fileID: 1068246520}
+  - component: {fileID: 1068246523}
   m_Layer: 0
   m_Name: SceneChager
   m_TagString: Untagged
@@ -8895,7 +8899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1405511729}
-  NextSceneName: Continent
+  NextSceneName: Title
   FadeInTime: 1
 --- !u!4 &1068246522
 Transform:
@@ -8913,6 +8917,36 @@ Transform:
   - {fileID: 898218125}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1068246523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068246519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c0711e8272dc099448f0a62168fcbf90, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1068246521}
+          m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
+          m_MethodName: ChangeScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1071578049
 GameObject:
   m_ObjectHideFlags: 0
@@ -13989,8 +14023,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 474
       objectReference: {fileID: 0}
     - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
         type: 3}
@@ -14000,7 +14044,7 @@ PrefabInstance:
     - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 493
       objectReference: {fileID: 0}
     - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
         type: 3}
@@ -15850,7 +15894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaypointList:
   - {fileID: 2042490127}
-  WalkDeltaTime: 0.02
+  WalkDeltaTime: 0.01
   AvaibleDistance: 1
   IsInfinity: 1
   ComeBack: 1
@@ -16884,7 +16928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaypointList:
   - {fileID: 2042490127}
-  WalkDeltaTime: 0.02
+  WalkDeltaTime: 0.025
   AvaibleDistance: 1
   IsInfinity: 1
   ComeBack: 1

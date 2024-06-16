@@ -18,6 +18,12 @@ public class DialogueSenario : MonoBehaviour
     [SerializeField]
     private int pageNum = 0;
 
+    [SerializeField]
+    TMP_Text guideText;
+    public float TypeTime = 1.0f;
+
+    Coroutine coroutine;
+
     private void Start() 
     {
         NextPage();
@@ -27,7 +33,14 @@ public class DialogueSenario : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            NextPage();
+            if (coroutine != null)
+            {
+                StopType();
+            }
+            else
+            {
+                NextPage();
+            }
         }
     }
 
@@ -41,6 +54,7 @@ public class DialogueSenario : MonoBehaviour
 
         nameText.text = Pages[pageNum].Name;
         descriptionText.text = Pages[pageNum].Description;
+        coroutine = StartCoroutine(TypeAnimation(descriptionText));
         ++pageNum;
     }
 
@@ -49,6 +63,34 @@ public class DialogueSenario : MonoBehaviour
         EndEvent?.Invoke();
         gameObject.SetActive(false);
     }
+
+     IEnumerator TypeAnimation(TMP_Text tMP_Text)
+        {
+            int maxVisible = tMP_Text.text.Length;
+            int curVisible = 0;
+            float curTime = 0.0f;
+
+            while (curTime < 1.0f)
+            {
+                curTime += Time.deltaTime / TypeTime;
+
+                curVisible++;
+                tMP_Text.maxVisibleCharacters = Mathf.FloorToInt(maxVisible * curTime);
+
+                yield return null;
+            }
+            
+            tMP_Text.maxVisibleCharacters = maxVisible;
+            coroutine = null;
+        }
+
+        public void StopType()
+        {
+            if (coroutine != null)
+                StopCoroutine(coroutine);
+            coroutine = null;
+            guideText.maxVisibleCharacters = guideText.text.Length;
+        }
     
 
     [System.Serializable]

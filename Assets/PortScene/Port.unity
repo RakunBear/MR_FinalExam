@@ -10846,7 +10846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 0}
-  speed: 10
+  speed: 7
   mouseSensitivity: 2
   playerBody: {fileID: 0}
   gravity: -9.81
@@ -10957,14 +10957,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331923454}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 8.13, z: -2.75}
+  m_LocalRotation: {x: -0, y: 0.08010764, z: -0, w: 0.9967863}
+  m_LocalPosition: {x: 5.22, y: 8.13, z: 7.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 710851679}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 9.19, z: 0}
 --- !u!114 &331923461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20610,7 +20610,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3aacb854c6676364b96d6d6b6cf124ca, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.572
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21516,7 +21516,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press 'E'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d150fb4472f8f774eb836575f9d37cc0, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21580,7 +21580,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &533871347
@@ -22321,8 +22321,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551181084}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 8.58, z: -2.75}
+  m_LocalRotation: {x: 0, y: 0.08010764, z: 0, w: 0.9967863}
+  m_LocalPosition: {x: 5.22, y: 8.58, z: 7.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34286,8 +34286,8 @@ MonoBehaviour:
     Description: "\uB77C\uC784\uC744 \uB123\uC744 \uC790\uB9AC\uC5D0 \uACE0\uAE30\uB97C
       \uB354 \uB123\uC9C0 \uB300\uCCB4 \uC65C \uB123\uC740\uAC74\uAC00?"
   - Name: "\uAD00\uB9AC\uC778"
-    Description: "\uACFC\uC77C\uC774 \uAD34\uD608\uBCD1\uC5D0 \uC88B\uB2E4\uB294
-      \uC18C\uBB38\uC774 \uC788\uC2B5\uB2C8\uB2E4"
+    Description: "\uCFE0\uB77C\uC0AC\uC624 \uC12C\uC758 \uACFC\uC77C\uC774 \uAD34\uD608\uBCD1\uC5D0
+      \uC88B\uB2E4\uB294 \uC18C\uBB38\uC774 \uC788\uC2B5\uB2C8\uB2E4"
   - Name: "\uCF5C\uB7FC\uBC84\uC2A4"
     Description: "\uC18C\uBB38\uC744 \uBBFF\uB098?\n\uB77C\uC784 \uB300\uC2E0 \uACE0\uAE30\uB97C
       \uC870\uAE08\uC774\uB77C\uB3C4 \uB354 \uB123\uB3C4\uB85D \uD558\uAC8C!"
@@ -34296,10 +34296,11 @@ MonoBehaviour:
       \uBC29\uBB38\uD558\uC154\uC11C \uC9C0\uAE08 \uB2F9\uC7A5 \uC624\uC154\uC57C
       \uD560 \uAC70 \uAC19\uC2B5\uB2C8\uB2E4!"
   - Name: "\uAD00\uB9AC\uC778"
-    Description: "\uC9C0\uAE08, \uACE0\uAE30\uB97C \uB354 \uAD6C\uD574\uC11C \uB123\uC744\uB824\uBA74
-      \uD798\uB4E4\uAC70 \uAC19\uC2B5\uB2C8\uB2E4."
+    Description: "\uC8C4\uC1A1\uD558\uC9C0\uB9CC, \uACE0\uAE30\uB97C \uB354 \uAD6C\uD574\uC11C
+      \uB123\uC744\uB824\uBA74 \uD798\uB4E4\uAC70 \uAC19\uC2B5\uB2C8\uB2E4."
   - Name: "\uCF5C\uB7FC\uBC84\uC2A4"
-    Description: "\uC790\uB124 \uC54C\uC544\uC11C \uD558\uAC8C!"
+    Description: "\uC5B4\uCA54 \uC218 \uC5C6\uC73C\uBA74 \uC77C\uB2E8 \uADF8\uB300\uB85C
+      \uB450\uAC8C!"
   nameText: {fileID: 443675508}
   descriptionText: {fileID: 317994488}
   EndEvent:
@@ -34318,6 +34319,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   pageNum: 0
+  guideText: {fileID: 317994488}
+  TypeTime: 1
 --- !u!1 &959812379
 GameObject:
   m_ObjectHideFlags: 0
@@ -36019,6 +36022,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6013632388104371080, guid: 6e0965b76baec374d9a8e0c82f9033cb,
         type: 3}
@@ -43145,7 +43158,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press 'E'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d150fb4472f8f774eb836575f9d37cc0, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -43209,7 +43222,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1272441733
@@ -55654,7 +55667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1072035248}
-  NextSceneName: Continent
+  NextSceneName: 1
   FadeInTime: 1
 --- !u!4 &1684131456
 Transform:
